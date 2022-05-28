@@ -14,6 +14,7 @@ webapi - само приложение, webapi.Tests - проект с юнит 
 
 `docker run -d --name dropbox-postgres -p 5432:5432 --network host -e POSTGRES_DB=dropbox -e POSTGRES_USER=dropbox -e POSTGRES_PASSWORD=password postgres`
 
-2. Запустить webapi. В vscode он запускается через F5, после того, как предложит добавить конфигурацию (Required assets to build and debug are missing from 'Testing'. Add them?)
+2. Перейти в папку webapi и запустить `dotnet ef database update` чтобы создать структуру бд.
+3. Запустить webapi. В vscode он запускается через F5, после того, как предложит добавить конфигурацию (Required assets to build and debug are missing from 'Testing'. Add them?)
 
-3. Тесты запускаются через `dotnet test` из консоли из папки webapi.Tests
+4. Тесты запускаются через `dotnet test` из консоли из папки webapi.Tests
